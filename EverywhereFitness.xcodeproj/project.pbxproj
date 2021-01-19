@@ -9,21 +9,37 @@
 /* Begin PBXBuildFile section */
 		617E1EB125B6B5450064CF27 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 617E1EB025B6B5450064CF27 /* AppDelegate.swift */; };
 		617E1EB325B6B5450064CF27 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 617E1EB225B6B5450064CF27 /* SceneDelegate.swift */; };
-		617E1EB525B6B5450064CF27 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 617E1EB425B6B5450064CF27 /* ViewController.swift */; };
 		617E1EB825B6B5450064CF27 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 617E1EB625B6B5450064CF27 /* Main.storyboard */; };
 		617E1EBA25B6B5480064CF27 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 617E1EB925B6B5480064CF27 /* Assets.xcassets */; };
 		617E1EBD25B6B5480064CF27 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 617E1EBB25B6B5480064CF27 /* LaunchScreen.storyboard */; };
+		617E1ECE25B6BC650064CF27 /* FitnessModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 617E1ECC25B6BC650064CF27 /* FitnessModel.xcdatamodeld */; };
+		617E1ED125B6BFD60064CF27 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 617E1ED025B6BFD60064CF27 /* CoreDataStack.swift */; };
+		617E1ED425B6C0AF0064CF27 /* FitnessClassRepresentation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 617E1ED325B6C0AF0064CF27 /* FitnessClassRepresentation.swift */; };
+		617E1ED725B6C1130064CF27 /* FitnessClass+Convenience.swift in Sources */ = {isa = PBXBuildFile; fileRef = 617E1ED625B6C1130064CF27 /* FitnessClass+Convenience.swift */; };
+		617E1EDB25B6C87F0064CF27 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 617E1EDA25B6C87F0064CF27 /* HomeViewController.swift */; };
+		617E1EDE25B6C8970064CF27 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 617E1EDD25B6C8970064CF27 /* ProfileViewController.swift */; };
+		617E1EE125B6C8B00064CF27 /* ScheduleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 617E1EE025B6C8B00064CF27 /* ScheduleViewController.swift */; };
+		617E1EE425B6C8C20064CF27 /* CreateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 617E1EE325B6C8C20064CF27 /* CreateViewController.swift */; };
+		617E1EE725B6C9690064CF27 /* FitnessClassController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 617E1EE625B6C9690064CF27 /* FitnessClassController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		617E1EAD25B6B5440064CF27 /* EverywhereFitness.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EverywhereFitness.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		617E1EB025B6B5450064CF27 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		617E1EB225B6B5450064CF27 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		617E1EB425B6B5450064CF27 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		617E1EB725B6B5450064CF27 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		617E1EB925B6B5480064CF27 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		617E1EBC25B6B5480064CF27 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		617E1EBE25B6B5480064CF27 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		617E1ECD25B6BC650064CF27 /* FitnessModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = FitnessModel.xcdatamodel; sourceTree = "<group>"; };
+		617E1ED025B6BFD60064CF27 /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
+		617E1ED325B6C0AF0064CF27 /* FitnessClassRepresentation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FitnessClassRepresentation.swift; sourceTree = "<group>"; };
+		617E1ED625B6C1130064CF27 /* FitnessClass+Convenience.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FitnessClass+Convenience.swift"; sourceTree = "<group>"; };
+		617E1EDA25B6C87F0064CF27 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		617E1EDD25B6C8970064CF27 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		617E1EE025B6C8B00064CF27 /* ScheduleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleViewController.swift; sourceTree = "<group>"; };
+		617E1EE325B6C8C20064CF27 /* CreateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateViewController.swift; sourceTree = "<group>"; };
+		617E1EE625B6C9690064CF27 /* FitnessClassController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FitnessClassController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,7 +103,10 @@
 		617E1EC725B6B6D50064CF27 /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				617E1EB425B6B5450064CF27 /* ViewController.swift */,
+				617E1EDA25B6C87F0064CF27 /* HomeViewController.swift */,
+				617E1EDD25B6C8970064CF27 /* ProfileViewController.swift */,
+				617E1EE025B6C8B00064CF27 /* ScheduleViewController.swift */,
+				617E1EE325B6C8C20064CF27 /* CreateViewController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -95,6 +114,10 @@
 		617E1EC825B6B6DC0064CF27 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				617E1ECC25B6BC650064CF27 /* FitnessModel.xcdatamodeld */,
+				617E1ED025B6BFD60064CF27 /* CoreDataStack.swift */,
+				617E1ED325B6C0AF0064CF27 /* FitnessClassRepresentation.swift */,
+				617E1ED625B6C1130064CF27 /* FitnessClass+Convenience.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -102,6 +125,7 @@
 		617E1EC925B6B6E30064CF27 /* Model Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				617E1EE625B6C9690064CF27 /* FitnessClassController.swift */,
 			);
 			path = "Model Controllers";
 			sourceTree = "<group>";
@@ -185,8 +209,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				617E1EB525B6B5450064CF27 /* ViewController.swift in Sources */,
+				617E1EE425B6C8C20064CF27 /* CreateViewController.swift in Sources */,
+				617E1ED425B6C0AF0064CF27 /* FitnessClassRepresentation.swift in Sources */,
+				617E1EE725B6C9690064CF27 /* FitnessClassController.swift in Sources */,
+				617E1ED125B6BFD60064CF27 /* CoreDataStack.swift in Sources */,
+				617E1ED725B6C1130064CF27 /* FitnessClass+Convenience.swift in Sources */,
+				617E1EE125B6C8B00064CF27 /* ScheduleViewController.swift in Sources */,
 				617E1EB125B6B5450064CF27 /* AppDelegate.swift in Sources */,
+				617E1ECE25B6BC650064CF27 /* FitnessModel.xcdatamodeld in Sources */,
+				617E1EDB25B6C87F0064CF27 /* HomeViewController.swift in Sources */,
+				617E1EDE25B6C8970064CF27 /* ProfileViewController.swift in Sources */,
 				617E1EB325B6B5450064CF27 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -389,6 +421,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		617E1ECC25B6BC650064CF27 /* FitnessModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				617E1ECD25B6BC650064CF27 /* FitnessModel.xcdatamodel */,
+			);
+			currentVersion = 617E1ECD25B6BC650064CF27 /* FitnessModel.xcdatamodel */;
+			path = FitnessModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 617E1EA525B6B5440064CF27 /* Project object */;
 }

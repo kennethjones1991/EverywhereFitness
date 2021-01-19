@@ -11,7 +11,7 @@
         <!--Home-->
         <scene sceneID="QFb-aU-vsH">
             <objects>
-                <viewController id="JO9-IU-1rO" sceneMemberID="viewController">
+                <viewController id="JO9-IU-1rO" customClass="HomeViewController" customModule="EverywhereFitness" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="qVV-RI-XJ6">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -40,7 +40,7 @@
         <!--Profile-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="EverywhereFitness" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ProfileViewController" customModule="EverywhereFitness" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -69,7 +69,7 @@
         <!--Schedule-->
         <scene sceneID="uen-gL-wQR">
             <objects>
-                <viewController id="GDR-u1-fXq" sceneMemberID="viewController">
+                <viewController id="GDR-u1-fXq" customClass="ScheduleViewController" customModule="EverywhereFitness" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="gE8-ch-jR9">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -98,7 +98,7 @@
         <!--Create-->
         <scene sceneID="gsZ-yf-nBm">
             <objects>
-                <viewController id="3I1-1f-zRM" sceneMemberID="viewController">
+                <viewController id="3I1-1f-zRM" customClass="CreateViewController" customModule="EverywhereFitness" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="7Ht-lU-N8a">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -264,6 +264,7 @@
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="h1A-Hw-IQU" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="WCM-Om-BIN">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
