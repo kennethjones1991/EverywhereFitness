@@ -22,20 +22,52 @@
                                     <navigationItem title="Instructor" id="ENz-mR-6h2"/>
                                 </items>
                             </navigationBar>
+                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="k66-S6-Sxc">
+                                <rect key="frame" x="20" y="160" width="350" height="153"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="S3F-fh-58G">
+                                        <rect key="frame" x="8" y="0.0" width="120" height="120"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Instructor Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8ZG-gn-EHe">
+                                        <rect key="frame" x="136" y="8" width="153" height="27"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Caption/Tagline" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tah-LS-ySo">
+                                        <rect key="frame" x="136" y="43" width="119" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5WJ-Hd-fP5">
+                                        <rect key="frame" x="251" y="115" width="91" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Visit Profile &gt;"/>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="bJA-b2-ZJc"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="Ajp-Up-6e6" firstAttribute="top" secondItem="bJA-b2-ZJc" secondAttribute="top" id="FRx-9k-um0"/>
+                            <constraint firstItem="k66-S6-Sxc" firstAttribute="leading" secondItem="bJA-b2-ZJc" secondAttribute="leading" constant="20" id="LRP-jx-2Jq"/>
                             <constraint firstItem="Ajp-Up-6e6" firstAttribute="trailing" secondItem="bJA-b2-ZJc" secondAttribute="trailing" id="O0Z-UW-uHi"/>
+                            <constraint firstItem="bJA-b2-ZJc" firstAttribute="trailing" secondItem="k66-S6-Sxc" secondAttribute="trailing" constant="20" id="Qvx-tG-Kew"/>
                             <constraint firstItem="Ajp-Up-6e6" firstAttribute="leading" secondItem="bJA-b2-ZJc" secondAttribute="leading" id="Yxb-GY-eOL"/>
+                            <constraint firstItem="k66-S6-Sxc" firstAttribute="top" secondItem="Ajp-Up-6e6" secondAttribute="bottom" constant="20" id="Zs5-hq-2BE"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Home" image="house.fill" catalog="system" id="xo4-xh-xUC"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eKE-2o-9xO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1047.8260869565217" y="-540.40178571428567"/>
+            <point key="canvasLocation" x="1047.6923076923076" y="-540.99526066350711"/>
         </scene>
         <!--Profile-->
         <scene sceneID="tne-QT-ifu">
