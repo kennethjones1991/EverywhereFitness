@@ -11,7 +11,6 @@ struct FitnessClassRepresentation: Codable {
     var identifier: String
     var name: String
     var type: String
-    var dateTime: Date
     var duration: Int
     var intensity: String
     var location: String

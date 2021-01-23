@@ -12,7 +12,22 @@ class HomeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+//        if let secondTab = self.tabBarController?.viewControllers?[1] as? ProfileViewController {
+//            secondTab.fitClassController = fitClassController
+//        }
+//
+//        if let thirdTab = self.tabBarController?.viewControllers?[1] as? ScheduleTableViewController {
+//            thirdTab.fitClassController = fitClassController
+//        }
+//
+//        if let fourthTab = self.tabBarController?.viewControllers?[1] as? CreateViewController {
+//            fourthTab.fitClassController = fitClassController
+//        }
+    }
+    
+    
+    @IBAction func visitProfile(_ sender: Any) {
+        tabBarController?.selectedIndex = 1
     }
     
 

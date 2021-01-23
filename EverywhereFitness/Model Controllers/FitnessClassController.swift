@@ -28,6 +28,8 @@ enum NetworkError: Error {
 let baseURL = URL(string: "https://everywherefitness-58d32-default-rtdb.firebaseio.com/")!
 
 class FitnessClassController {
+    static let sharedInstance = FitnessClassController()
+    
     typealias CompletionHandler = (Result<Bool, NetworkError>) -> Void
     
     init() {
@@ -129,7 +131,6 @@ class FitnessClassController {
     private func update(fitnessClass: FitnessClass, with representation: FitnessClassRepresentation) {
         fitnessClass.name = representation.name
         fitnessClass.type = representation.type
-        fitnessClass.dateTime = representation.dateTime
         fitnessClass.duration = Int16(representation.duration)
         fitnessClass.intensity = representation.intensity
         fitnessClass.location = representation.location

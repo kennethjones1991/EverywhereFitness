@@ -8,16 +8,41 @@
 import UIKit
 
 class BigClassTableViewCell: UITableViewCell {
+    
+    @IBOutlet weak var classImageView: UIImageView!
+    @IBOutlet weak var nameLabel: UILabel!
+    @IBOutlet weak var typeLabel: UILabel!
+    @IBOutlet weak var intensityLabel: UILabel!
+    @IBOutlet weak var locationLabel: UILabel!
+    @IBOutlet weak var durationLabel: UILabel!
 
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
+    static let reuseIdentifier = "BigFitnessClassCell"
+    
+    var fitnessClass: FitnessClass? {
+        didSet {
+            updateViews()
+        }
     }
-
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
+    
+    private func updateViews() {
+        guard let fitnessClass = fitnessClass else { return }
+        
+        nameLabel.text = fitnessClass.name
+        typeLabel.text = fitnessClass.type?.capitalized
+        intensityLabel.text = fitnessClass.intensity?.capitalized
+        locationLabel.text = fitnessClass.location
+        durationLabel.text = "\(fitnessClass.duration)min"
+        
+        switch fitnessClass.type {
+        case "weights":
+            classImageView.image = UIImage(named: "weights")
+        case "cardio":
+            classImageView.image = UIImage(named: "cardio")
+        case "mma":
+            classImageView.image = UIImage(named: "mma")
+        default:
+            classImageView.image = UIImage(named: "weights")
+        }
     }
 
 }

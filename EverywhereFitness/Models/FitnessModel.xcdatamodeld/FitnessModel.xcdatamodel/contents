@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="17709" systemVersion="20C69" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
     <entity name="FitnessClass" representedClassName="FitnessClass" syncable="YES" codeGenerationType="class">
-        <attribute name="dateTime" attributeType="Date" usesScalarValueType="NO"/>
         <attribute name="duration" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
         <attribute name="identifier" attributeType="UUID" usesScalarValueType="NO"/>
         <attribute name="intensity" attributeType="String"/>
@@ -11,6 +10,6 @@
         <attribute name="type" attributeType="String"/>
     </entity>
     <elements>
-        <element name="FitnessClass" positionX="-63" positionY="-18" width="128" height="149"/>
+        <element name="FitnessClass" positionX="-63" positionY="-18" width="128" height="134"/>
     </elements>
 </model>

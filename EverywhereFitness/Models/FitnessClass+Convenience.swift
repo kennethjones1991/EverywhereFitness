@@ -9,7 +9,7 @@ import Foundation
 import CoreData
 
 enum ClassType: String, CaseIterable {
-    case yoga, running, boxing, weightlifting, dancing, biking
+    case weights, cardio, mma
 }
 
 enum Intensity: String, CaseIterable {
@@ -23,13 +23,12 @@ extension FitnessClass {
               let intensity = intensity,
               let location = location else { return nil }
         
-        return FitnessClassRepresentation(identifier: identifier?.uuidString ?? "", name: name, type: type, dateTime: dateTime ?? Date(), duration: Int(duration), intensity: intensity, location: location, maxSize: Int(maxSize))
+        return FitnessClassRepresentation(identifier: identifier?.uuidString ?? "", name: name, type: type, duration: Int(duration), intensity: intensity, location: location, maxSize: Int(maxSize))
     }
     
     @discardableResult convenience init(identifier: UUID = UUID(),
                                         name: String,
                                         type: ClassType,
-                                        dateTime: Date,
                                         duration: Int,
                                         intensity: Intensity,
                                         location: String,
@@ -39,7 +38,6 @@ extension FitnessClass {
         self.identifier = identifier
         self.name = name
         self.type = type.rawValue
-        self.dateTime = dateTime
         self.duration = Int16(duration)
         self.intensity = intensity.rawValue
         self.location = location
@@ -55,7 +53,6 @@ extension FitnessClass {
         self.init(identifier: identifier,
                   name: classRepresentation.name,
                   type: type,
-                  dateTime: classRepresentation.dateTime,
                   duration: classRepresentation.duration,
                   intensity: intensity,
                   location: classRepresentation.location,
