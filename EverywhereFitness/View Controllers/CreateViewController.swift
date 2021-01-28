@@ -59,10 +59,9 @@ class CreateViewController: UIViewController {
         let newClass = FitnessClass(name: name, type: type, duration: duration, intensity: intensity, location: location, maxSize: maxSize)
         
         FitnessClassController.sharedInstance.createClass(fitnessClass: newClass)
-        print("Class created!")
+        try? CoreDataStack.shared.mainContext.save()
         
         NotificationCenter.default.post(name: .fitnessClassCreated, object: nil)
-        print("Notification sent")
         
         let alert = UIAlertController(title: "Success!", message: "Your new fitness class was created!", preferredStyle: .alert)
         

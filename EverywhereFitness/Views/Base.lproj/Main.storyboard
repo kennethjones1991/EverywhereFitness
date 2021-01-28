@@ -75,7 +75,10 @@
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BBr-e2-y9w">
                                 <rect key="frame" x="309" y="312" width="61" height="30"/>
-                                <state key="normal" title="See All &gt;"/>
+                                <state key="normal" title="Details &gt;"/>
+                                <connections>
+                                    <action selector="viewClassDetails:" destination="JO9-IU-1rO" eventType="touchUpInside" id="eAk-pF-Cep"/>
+                                </connections>
                             </button>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="snz-9s-zKy">
                                 <rect key="frame" x="0.0" y="350" width="390" height="411"/>
@@ -106,6 +109,10 @@
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                 </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="JO9-IU-1rO" id="j67-f0-pUn"/>
+                                    <outlet property="delegate" destination="JO9-IU-1rO" id="znx-Lh-k1e"/>
+                                </connections>
                             </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="bJA-b2-ZJc"/>
@@ -128,6 +135,9 @@
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Home" image="house.fill" catalog="system" id="xo4-xh-xUC"/>
+                    <connections>
+                        <outlet property="tableView" destination="snz-9s-zKy" id="jYs-QH-Gjz"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eKE-2o-9xO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -507,6 +517,7 @@
                     </tableView>
                     <navigationItem key="navigationItem" title="Upcoming" id="734-LT-hFX"/>
                     <refreshControl key="refreshControl" opaque="NO" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" id="lcL-fi-UCB">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <connections>
                             <action selector="refreshData:" destination="ukB-B9-kZy" eventType="valueChanged" id="MOn-lG-EkA"/>

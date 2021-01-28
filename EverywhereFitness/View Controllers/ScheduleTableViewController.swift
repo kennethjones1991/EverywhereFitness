@@ -12,7 +12,7 @@ class ScheduleTableViewController: UITableViewController, NSFetchedResultsContro
     
     lazy var fetchedResultsController: NSFetchedResultsController<FitnessClass> = {
         let fetchRequest: NSFetchRequest<FitnessClass> = FitnessClass.fetchRequest()
-        fetchRequest.sortDescriptors = [NSSortDescriptor(key: "identifier", ascending: true)]
+        fetchRequest.sortDescriptors = [NSSortDescriptor(key: "name", ascending: true)]
         
         let moc = CoreDataStack.shared.mainContext
         let frc = NSFetchedResultsController(fetchRequest: fetchRequest, managedObjectContext: moc, sectionNameKeyPath: nil, cacheName: nil)
@@ -29,9 +29,7 @@ class ScheduleTableViewController: UITableViewController, NSFetchedResultsContro
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        print("Definitely loaded")
         NotificationCenter.default.addObserver(self, selector: #selector(updateViews), name: .fitnessClassCreated, object: nil)
-        print("Notification got")
     }
     
     @IBAction func refreshData(_ sender: Any) {
